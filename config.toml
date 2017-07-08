@@ -1,0 +1,43 @@
+baseURL             = "http://jonart.us/"
+languageCode        = "en-GB"
+author              = "Jon Artus"
+title               = "Jon Artus"
+theme               = "cocoa"
+layoutdir           = "layouts"
+publishdir          = "public"
+googleAnalytics     = "UA-102258058-1"
+
+[permalinks]
+fixed = ":title/"
+blog  = "blog/:slug/"
+
+[[menu.main]]
+name                   = "Blog"
+weight                 = -120
+identifier             = "blog"
+url                    = "/blog/"
+
+[[menu.main]]
+name                   = "About"
+weight                 = -110
+identifier             = "about"
+url                    = "/about/"
+
+
+[params]
+latestpostscount       = 5                             # how many posts to display on the home page
+i18n_flags             = false                         # whether to display small country flags for available translations
+author                 = "Jon Artus"
+cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
+extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
+dateform               = "Jan 2, 2006"
+dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
+description            = "Jon Artus"
+email                  = "jon@jonart.us"
+highlightjs            = true
+lang                   = "en"
+
+github                 = "https://github.com/JonArtus"
+linkedin               = "https://www.linkedin.com/in/jonathon-artus-0a85449a/"
+avatar                 = "img/profile_small.png"
+
